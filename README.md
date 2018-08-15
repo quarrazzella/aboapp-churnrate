@@ -128,3 +128,44 @@
 
 #### churned
 0 = в июле 2018 была зафиксирована хотя бы 1 сессия на данное устройство, 1 - ни одной сессии. 
+
+## Особенности DataFrame 
+
+Посмотрим на пропуски в данных
+
+```
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 130885 entries, 0 to 130884
+Data columns (total 31 columns):
+DeviceID                               130885 non-null uint64
+sessions_totalnumber                   130885 non-null int64
+sessions_avgdaylag                     130885 non-null float64
+sessions_totaldaysactive               130885 non-null int64
+sessions_daysSinceLastSession          130885 non-null int64
+payments_operationAmount_count         61798 non-null float64
+payments_operationAmount_sum           61798 non-null float64
+payments_operationAmount_median        61798 non-null float64
+payments_operationAmount_min           61798 non-null float64
+payments_operationAmount_max           61798 non-null float64
+payments_sender_nunique                61798 non-null float64
+payments_recipient_nunique             61798 non-null float64
+payments_operationMethod_nunique       61798 non-null float64
+payments_avgdaylag                     61798 non-null float64
+payments_daysactive                    61798 non-null float64
+payments_daysSinceLastPayment          61798 non-null float64
+transfers_operationAmount_count        57108 non-null float64
+transfers_operationAmount_sum          57108 non-null float64
+transfers_operationAmount_median       57108 non-null float64
+transfers_operationAmount_min          57108 non-null float64
+transfers_operationAmount_max          57108 non-null float64
+transfers_operationFee_sum             56377 non-null float64
+transfers_sender_nunique               57108 non-null float64
+transfers_recipient_nunique            57108 non-null float64
+transfers_operationMethod_nunique      57108 non-null float64
+transfers_senderCurrency_nunique       57108 non-null float64
+transfers_recipientCurrency_nunique    57108 non-null float64
+transfers_avgdaylag                    57108 non-null float64
+transfers_daysactive                   57108 non-null float64
+fundTransfers_daysSinceLastTransfer    57108 non-null float64
+churned                                130885 non-null int64
+```
